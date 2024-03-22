@@ -1,4 +1,7 @@
 ---
+# 一定要开启marp的html支持
+# 可以生成网页和pdf
+# 生成的pptx不可修改
 marp: true
 size: 16:9
 theme: default
@@ -12,8 +15,9 @@ style: |
       top: 1%;
       left: 5%;
     }
-
+    
 header: ""
+# todo 更改学院信息
 footer: <span style="font-size:26px;text-align:center">信息与通信工程学院</span>  
 # 这里是右上角logo 
 backgroundImage: url(./img/HNU.png)
@@ -25,6 +29,7 @@ backgroundPosition: top 1% right 1%
 <style scoped>
     section {
        text-align: center;
+       font-family: '仿宋';
     }
     .hnu_img {
         /* border: 5px solid; */
@@ -33,7 +38,7 @@ backgroundPosition: top 1% right 1%
     }
     h1{
       color: #eef;
-      font-family: 方正小标宋简体;
+       
       margin-bottom: 20px;
       /* border: 5px solid  */
     }
@@ -63,16 +68,17 @@ _footer: ""
 
 <div class="info"> 
 
-**答辩人：xxx** 
-**导&emsp;师：xxx教授**
-**专&emsp;业：xxx**
-**&emsp;2024年5月**
+<!-- todo :不要删除上面这行空格 ：在合适的地方填入你的信息 -->
+**答辩人：张三** 
+**导&emsp;师：罗辑教授**
+**专&emsp;业：宇宙法学**
+**&emsp;2024 年 5 月**
 
 </div>
 
 ---
 <!-- 目录页 -->
-<!-- 使用_headers =  -->
+<!-- 使用_headers 指定页眉的那内容-->
 <!-- 
 _header: "Contents" 
 -->
@@ -88,7 +94,8 @@ _header: "Contents"
   .col_1 .p1 {
     height:100%;
     font-size:72px;
-    font-family:方正小标宋简体;
+    /* font-weight:bold; */
+    font-family:'方正小标宋简体';
     text-align:center;
     padding-top:25%;
   }
@@ -102,20 +109,17 @@ _header: "Contents"
     <p class='p1'>目<br>录</p>
 </div>
 <div class='col_2'> 
-<br>
-<!-- todo :不要删掉下面这行空格-->
+<br/>
 
+<!-- todo :请你修改成自己的目录-->
 1. <big>研究背景与意义</big>
 2. <big>研究方案与实现</big>
-3. <big>仿真验证结果</big>
-4. <big>物理综合评估结果</big>
-5. <big>工作总结与展望</big>
-   
-<br>
+3. <big>研究结论</big>
+4. <big>工作总结与展望</big>
+
+<br/>
 </div>
 </div>
-
-
 
 ---
 <!--
@@ -123,6 +127,9 @@ _header: "一、研究背景和意义"
 -->
 
 
+
+
+<!-- 使用---语法分割一页ppt，注意之前要空一行 -->
 
 ---
 <!--
@@ -132,21 +139,14 @@ _header: "二、研究方案与实现"
 
 ---
 <!--
-_header: "三、仿真验证结果"
+_header: "三、研究结论"
 -->
 
 
 
 ---
 <!--
-_header: "四、物理综合评估结果"
--->
-
-
-
----
-<!--
-_header: "五、工作总结与展望"
+_header: "四、工作总结与展望"
 -->
 
 
@@ -163,11 +163,14 @@ _backgroundSize: 100%
 <style scoped>
     section {
        text-align: center;
-       font-size:80px;
+      
        font-family: 仿宋;
+       /* background-color: #66CCFF; */
     }
 </style>
 
 ![img w:400](./img/HNU.png)
 <!-- Thank You! -->
-恳请各位老师批评指导!
+<p style="font-size:80px;">恳请各位老师批评指导!</p>
+<p style="font-size:50px;">张三</p>
+<p style="font-size:40px;">2024.05</p>
